@@ -1,30 +1,27 @@
-body {
-    background-color: rgb(67, 126, 168);
-    font-family: 'ArialRounded', Arial, sans-serif;
-}
-
 #fix-position {
     margin: auto;
     max-width: 620px;
 }
 
-#title-text {
-    display: inline;
+#title-text, #timer {
     font-weight: bold;
     color: white;
+
+}
+
+#title-text {
+    display: inline;
     font-size: 30px;
+}
+
+#timer {
+    text-align: center;
+    font-size: 120px;
 }
 
 #icon {
     vertical-align: middle;
     padding-bottom: 13px;
-}
-
-#timer {
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    font-size: 120px;
 }
 
 button {
@@ -35,4 +32,9 @@ button {
     width: 200px;
     border: none;
     font-size: 22px;
+}
+
+body {
+    background-color: rgb(67, 126, 168);
+    font-family: 'ArialRounded', Arial, sans-serif;
 }
