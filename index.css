@@ -32,5 +32,6 @@ button {
     background-color: white;
     height: 55px;
     width: 200px;
+    border: none;
     font-size: 22px;
 }
