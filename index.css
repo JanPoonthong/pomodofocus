@@ -3,20 +3,21 @@ body {
     font-family: 'ArialRounded', Arial, sans-serif;
 }
 
-#nav-text {
-    font-weight: bold;
-    color: white;
-    font-size: 30px;
-    padding-left: 600px;
+#fix-position {
+    margin: auto;
+    max-width: 620px;
 }
 
 #title-text {
     display: inline;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
 }
 
 #icon {
     vertical-align: middle;
-    padding-bottom: 5px;
+    padding-bottom: 13px;
 }
 
 #timer {
