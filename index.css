@@ -18,3 +18,19 @@ body {
     vertical-align: middle;
     padding-bottom: 5px;
 }
+
+#timer {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 120px;
+}
+
+button {
+    cursor: pointer;
+    color: rgb(67, 126, 168);
+    background-color: white;
+    height: 55px;
+    width: 200px;
+    font-size: 22px;
+}
