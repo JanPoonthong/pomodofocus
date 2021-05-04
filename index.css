@@ -1,15 +1,19 @@
 nav {
-    text-align: center;
     font-weight: bold;
     color: white;
     font-size: 30px;
-}
-
-p {
-    display: inline;
+    padding-left: 600px;
 }
 
 body {
     background-color: rgb(67, 126, 168);
     font-family: 'ArialRounded', Arial, sans-serif;
+}
+
+#title-text {
+    display: inline;
+}
+
+#icon {
+    padding-top: 20px;
 }
