@@ -1,0 +1,15 @@
+nav {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+p {
+    display: inline;
+}
+
+body {
+    background-color: rgb(67, 126, 168);
+    font-family: 'ArialRounded', Arial, sans-serif;
+}
