@@ -1,40 +1,51 @@
 #fix-position {
-    margin: auto;
-    max-width: 620px;
+  margin: auto;
+  max-width: 620px;
 }
 
 #title-text, #timer {
-    font-weight: bold;
-    color: white;
+  font-weight: bold;
+  color: white;
 
 }
 
 #title-text {
-    display: inline;
-    font-size: 30px;
+  display: inline;
+  font-size: 30px;
 }
 
 #timer {
-    text-align: center;
-    font-size: 120px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: auto;
+  max-width: 480px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 120px;
+}
+
+#margin-box {
+  max-width: 620px;
+  margin: auto;
 }
 
 #icon {
-    vertical-align: middle;
-    padding-bottom: 13px;
+  vertical-align: middle;
+  padding-bottom: 13px;
 }
 
 button {
-    cursor: pointer;
-    color: rgb(67, 126, 168);
-    background-color: white;
-    height: 55px;
-    width: 200px;
-    border: none;
-    font-size: 22px;
+  cursor: pointer;
+  color: rgb(67, 126, 168);
+  background-color: white;
+  height: 55px;
+  width: 200px;
+  border: none;
+  font-size: 22px;
+  border-radius: 4px;
+  box-shadow: rgb(235, 235, 235) 0px 6px 0px;
 }
 
 body {
-    background-color: rgb(67, 126, 168);
-    font-family: 'ArialRounded', Arial, sans-serif;
+  background-color: rgb(67, 126, 168);
+  font-family: 'ArialRounded', Arial, sans-serif;
 }
