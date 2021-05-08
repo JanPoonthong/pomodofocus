@@ -3,7 +3,7 @@
   max-width: 620px;
 }
 
-#title-text, #timer {
+#title-text, #timer-box {
   font-weight: bold;
   color: white;
 
@@ -14,9 +14,10 @@
   font-size: 30px;
 }
 
-#timer {
+#timer-box {
   background-color: rgba(255, 255, 255, 0.1);
   margin: auto;
+  margin-top: 35px;
   max-width: 480px;
   border-radius: 6px;
   text-align: center;
@@ -32,7 +33,7 @@
   padding-bottom: 13px;
 }
 
-button {
+#start {
   cursor: pointer;
   color: rgb(67, 126, 168);
   background-color: white;
@@ -43,6 +44,14 @@ button {
   border-radius: 4px;
   box-shadow: rgb(235, 235, 235) 0px 6px 0px;
   margin-bottom: 30px;
+}
+
+#timer {
+  cursor: pointer;
+  color: white;
+  border: medium none;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0);
 }
 
 hr {
