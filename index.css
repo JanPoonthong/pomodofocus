@@ -46,12 +46,18 @@
   margin-bottom: 30px;
 }
 
+#timer-category {
+  padding-right: 25px;
+}
+
 #timer {
   cursor: pointer;
   color: white;
   border: medium none;
   font-size: 18px;
   background: rgba(0, 0, 0, 0);
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 hr {
@@ -67,6 +73,6 @@ body {
 
 h4 {
   font-size: 120px;
-  margin-top: 40px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
