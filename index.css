@@ -42,8 +42,7 @@ button {
   font-size: 22px;
   border-radius: 4px;
   box-shadow: rgb(235, 235, 235) 0px 6px 0px;
-  position: relative;
-  display: inline-block;
+  margin-bottom: 30px;
 }
 
 hr {
