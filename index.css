@@ -51,7 +51,7 @@
   padding-right: 25px;
 }
 
-#timer {
+.timer {
   cursor: pointer;
   color: white;
   border: medium none;
@@ -59,6 +59,20 @@
   background: rgba(0, 0, 0, 0);
   margin-left: 30px;
   margin-top: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.timer-button-click {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.button-start-click {
+  padding: 10px;
+  box-shadow: none;
 }
 
 hr {
