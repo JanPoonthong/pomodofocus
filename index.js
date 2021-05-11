@@ -1,5 +1,6 @@
 function start() {
   document.querySelector(".start").classList.add("button-start-click");
+  document.querySelector(".start").innerHTML = "STOP";
 }
 
 function pomodoroTimer() {
