@@ -33,7 +33,7 @@
   padding-bottom: 13px;
 }
 
-#start {
+.start {
   cursor: pointer;
   color: rgb(67, 126, 168);
   background-color: white;
