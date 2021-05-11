@@ -7,12 +7,12 @@ function start() {
 
 function pomodoroTimer() {
   console.log("pomodoro");
-  document.querySelector(".timer").classList.add("timer-button-click");
+  document.querySelector(".timer-pomodoro").classList.add("timer-button-click");
 }
 
 function breakTimer() {
   // TODO(jan): When break button is click the background-color appear on Pomodoro
   // TODO(jan): select query using Id but add class
   console.log("break");
-  document.querySelector(".timer").classList.add("timer-button-click");
+  document.querySelector(".timer-break").classList.add("timer-button-click");
 }

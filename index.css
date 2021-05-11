@@ -51,7 +51,7 @@
   padding-right: 25px;
 }
 
-.timer {
+.timer-pomodoro, .timer-break {
   cursor: pointer;
   color: white;
   border: medium none;
