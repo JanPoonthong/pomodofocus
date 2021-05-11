@@ -42,7 +42,6 @@
   border: none;
   font-size: 22px;
   border-radius: 4px;
-  /* When the button is press box-shadow should disappear */
   box-shadow: rgb(235, 235, 235) 0px 6px 0px;
   margin-bottom: 30px;
   font-weight: bold;
