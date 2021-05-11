@@ -51,7 +51,8 @@
   padding-right: 25px;
 }
 
-.timer-pomodoro, .timer-break {
+
+.timer-pomodoro, .timer-break, .timer-pomodoro-default {
   cursor: pointer;
   color: white;
   border: medium none;
@@ -63,7 +64,7 @@
   padding-top: 5px;
 }
 
-.timer-button-click {
+.timer-button-click, .timer-pomodoro-default {
   background-color: rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   padding-bottom: 5px;
