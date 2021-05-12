@@ -3,7 +3,7 @@
   max-width: 620px;
 }
 
-h1, #timer-box {
+a, #timer-box {
   font-weight: bold;
   color: white;
 }
