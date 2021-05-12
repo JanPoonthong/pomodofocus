@@ -6,7 +6,6 @@
 h1, #timer-box {
   font-weight: bold;
   color: white;
-
 }
 
 #timer-box {
@@ -46,7 +45,6 @@ h1, #timer-box {
   padding-right: 25px;
 }
 
-
 .timer-pomodoro, .timer-break, .timer-pomodoro-default {
   cursor: pointer;
   color: white;
@@ -70,6 +68,12 @@ h1, #timer-box {
 .button-start-click {
   padding: 10px;
   box-shadow: none;
+}
+
+#timer {
+  font-size: 120px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 hr {
