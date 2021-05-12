@@ -3,15 +3,10 @@
   max-width: 620px;
 }
 
-#title-text, #timer-box {
+h1, #timer-box {
   font-weight: bold;
   color: white;
 
-}
-
-#title-text {
-  display: inline;
-  font-size: 30px;
 }
 
 #timer-box {
@@ -30,7 +25,7 @@
 
 #icon {
   vertical-align: middle;
-  padding-bottom: 13px;
+  padding-bottom: 7px;
 }
 
 .start {
