@@ -5,7 +5,6 @@ let interval = 0;
 
 function start() {
   if (clicked) {
-    console.log("askdjl");
     timerStop();
   } else {
     timerStart();
@@ -30,14 +29,17 @@ function minutesTimer() {
 }
 
 function pomodoroTimer() {
+  timerStop();
   document.getElementById("timer").innerHTML = "60:00";
+  second = 60;
+  minutes = 59;
 }
 
 function breakTimer() {
-  document.getElementById("timer").innerHTML = "10:00";
-  second = 59;
-  minutes = 9;
   timerStop();
+  document.getElementById("timer").innerHTML = "10:00";
+  second = 60;
+  minutes = 9;
 }
 
 function timerStart() {
