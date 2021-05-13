@@ -20,6 +20,7 @@
         <div id="timer-box">
           <div id="timer-category">
             <input
+              onclick="pomodoroTimer()"
               type="radio"
               name="timer-buttons"
               value="pomodoro"
@@ -27,10 +28,16 @@
               checked
             />
             <label for="pomodoro">Pomodoro</label>
-            <input type="radio" name="timer-buttons" value="break" id="break" />
+            <input
+              onclick="breakTimer()"
+              type="radio"
+              name="timer-buttons"
+              value="break"
+              id="break"
+            />
             <label for="break">Break</label>
           </div>
-          <p id="timer">00:00</p>
+          <p id="timer">60:00</p>
           <button onclick="start()" class="start">START</button>
         </div>
         <script src="./index.js"></script>
