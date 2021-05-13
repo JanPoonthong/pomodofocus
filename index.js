@@ -17,7 +17,7 @@ function secondTimer() {
   document.getElementById("timer").innerHTML =
     minutes.toString() + ":" + second;
   if (second < 01) {
-    second = 60;
+    second = 59;
     minutesTimer();
   }
 }
@@ -31,14 +31,14 @@ function minutesTimer() {
 function pomodoroTimer() {
   timerStop();
   document.getElementById("timer").innerHTML = "60:00";
-  second = 60;
+  second = 59;
   minutes = 59;
 }
 
 function breakTimer() {
   timerStop();
   document.getElementById("timer").innerHTML = "10:00";
-  second = 60;
+  second = 59;
   minutes = 9;
 }
 
