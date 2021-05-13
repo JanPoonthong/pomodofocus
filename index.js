@@ -4,10 +4,11 @@ let second = 60;
 let interval = 0;
 
 function start() {
-  timerStart();
   if (clicked) {
     console.log("askdjl");
     timerStop();
+  } else {
+    timerStart();
   }
   clicked = !clicked;
 }
