@@ -3,7 +3,8 @@
   max-width: 620px;
 }
 
-a, #timer-box {
+a,
+#timer-box {
   font-weight: bold;
   color: white;
 }
@@ -45,7 +46,9 @@ a, #timer-box {
   padding-right: 25px;
 }
 
-.timer-pomodoro, .timer-break, .timer-pomodoro-default {
+.timer-pomodoro,
+.timer-break,
+.timer-pomodoro-default {
   cursor: pointer;
   color: white;
   border: medium none;
@@ -57,7 +60,8 @@ a, #timer-box {
   padding-top: 5px;
 }
 
-.timer-button-click, .timer-pomodoro-default {
+.timer-button-click,
+.timer-pomodoro-default {
   background-color: rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   padding-bottom: 5px;
@@ -84,7 +88,7 @@ hr {
 
 body {
   background-color: rgb(67, 126, 168);
-  font-family: 'ArialRounded', Arial, sans-serif;
+  font-family: "ArialRounded", Arial, sans-serif;
 }
 
 h4 {

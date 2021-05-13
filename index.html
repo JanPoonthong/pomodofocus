@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodo Focus</title>
-    <link rel="shortcut icon" type="image/jpg" href="focus_favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="index.css">
-  <head>
-  <body>
-    <div id="fix-position">
-      <h1>
-        <a href="index.html">
-          <img id="icon" src="./focus.png" width=30>Pomodofocus
-        </a>
-      </h1>
-    </div>
-    <hr>
-    <div id="timer-box">
-      <div id="timer-category">
-        <button onclick="pomodoroTimer()" class="timer-pomodoro-default">Pomodoro</button>
-        <button onclick="breakTimer()" class="timer-break">Break</button>
-      </div>
-      <p id="timer">00:00</p>
-      <button onclick="start()" class="start">START</button>
-    </div>
-    <script src='./index.js'></script>
-  </body>
+    <link rel="shortcut icon" type="image/jpg" href="focus_favicon.png" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <head>
+      <body>
+        <div id="fix-position">
+          <h1>
+            <a href="index.html">
+              <img id="icon" src="./focus.png" width="30" />Pomodofocus
+            </a>
+          </h1>
+        </div>
+        <hr />
+        <div id="timer-box">
+          <div id="timer-category">
+            <button onclick="pomodoroTimer()" class="timer-pomodoro-default">
+              Pomodoro
+            </button>
+            <button onclick="breakTimer()" class="timer-break">Break</button>
+          </div>
+          <p id="timer">00:00</p>
+          <button onclick="start()" class="start">START</button>
+        </div>
+        <script src="./index.js"></script>
+      </body>
+    </head>
+  </head>
 </html>
