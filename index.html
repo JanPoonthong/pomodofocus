@@ -19,10 +19,15 @@
         <hr />
         <div id="timer-box">
           <div id="timer-category">
+            <input type="radio" name="timer-buttons" value="pomodoro" checked />
+            <label for="pomodoro">Pomodoro</label>
+            <input type="radio" name="timer-buttons" value="break" />
+            <label for="break">Break</label>
+            <!--
             <button onclick="pomodoroTimer()" class="timer-pomodoro-default">
               Pomodoro
             </button>
-            <button onclick="breakTimer()" class="timer-break">Break</button>
+            <button onclick="breakTimer()" class="timer-break">Break</button> -->
           </div>
           <p id="timer">00:00</p>
           <button onclick="start()" class="start">START</button>

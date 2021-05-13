@@ -44,6 +44,7 @@ a,
 
 #timer-category {
   padding-right: 25px;
+  padding-top: 15px;
 }
 
 .timer-pomodoro,
@@ -99,4 +100,22 @@ h4 {
 
 a {
   text-decoration: none;
+}
+
+input {
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+}
+
+input:checked + label {
+  border-radius: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-weight: bold;
+  padding-left: 6px;
+  padding-right: 5px;
+  background-color: rgba(0, 0, 0, 0.15);
 }
