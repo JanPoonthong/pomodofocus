@@ -17,8 +17,12 @@ function secondTimer() {
   document.getElementById("timer").innerHTML =
     minutes.toString() + ":" + second;
   if (second < 01) {
-    second = 59;
-    minutesTimer();
+    if (minutes === 0 && second === 0) {
+      window.clearInterval(interval);
+    } else {
+      second = 59;
+      minutesTimer();
+    }
   }
 }
 
@@ -30,15 +34,17 @@ function minutesTimer() {
 
 function pomodoroTimer() {
   timerStop();
+  clicked = false;
   document.getElementById("timer").innerHTML = "60:00";
-  second = 59;
+  second = 60;
   minutes = 59;
 }
 
 function breakTimer() {
   timerStop();
+  clicked = false;
   document.getElementById("timer").innerHTML = "10:00";
-  second = 59;
+  second = 60;
   minutes = 9;
 }
 
