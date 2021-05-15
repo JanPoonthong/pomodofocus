@@ -7,41 +7,39 @@
     <title>Pomodo Focus</title>
     <link rel="shortcut icon" type="image/jpg" href="focus_favicon.png" />
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <head>
-      <body>
-        <div id="fix-position">
-          <h1>
-            <a href="index.html">
-              <img id="icon" src="./focus.png" width="30" />Pomodofocus
-            </a>
-          </h1>
-        </div>
-        <hr />
-        <div id="timer-box">
-          <div id="timer-category">
-            <input
-              onclick="pomodoroTimer()"
-              type="radio"
-              name="timer-buttons"
-              value="pomodoro"
-              id="pomodoro"
-              checked
-            />
-            <label for="pomodoro">Pomodoro</label>
-            <input
-              onclick="breakTimer()"
-              type="radio"
-              name="timer-buttons"
-              value="break"
-              id="break"
-            />
-            <label for="break">Break</label>
-          </div>
-          <p id="timer">60:00</p>
-          <button onclick="start()" class="start">START</button>
-        </div>
-        <script src="./index.js"></script>
-      </body>
-    </head>
   </head>
+  <body>
+    <div id="fix-position">
+      <h1>
+        <a href="index.html">
+          <img id="icon" src="./focus.png" width="30" />Pomodofocus
+        </a>
+      </h1>
+    </div>
+    <hr />
+    <div id="timer-box">
+      <div id="timer-category">
+        <input
+          onclick="pomodoroTimer()"
+          type="radio"
+          name="timer-buttons"
+          value="pomodoro"
+          id="pomodoro"
+          checked
+        />
+        <label for="pomodoro">Pomodoro</label>
+        <input
+          onclick="breakTimer()"
+          type="radio"
+          name="timer-buttons"
+          value="break"
+          id="break"
+        />
+        <label for="break">Break</label>
+      </div>
+      <p id="timer">60:00</p>
+      <button onclick="start()" class="start">START</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
 </html>
