@@ -60,7 +60,7 @@ function timerStart() {
 }
 
 function timerStop() {
-  // window.clearInterval(interval);
+  window.clearInterval(interval);
   document.querySelector(".start").className = "start";
   document.querySelector(".start").innerHTML = "START";
 }
