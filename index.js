@@ -16,9 +16,14 @@ function secondTimer() {
   second--;
   document.getElementById("timer").innerHTML =
     minutes.toString() + ":" + second;
+  if (second < 10) {
+    document.getElementById("timer").innerHTML =
+      minutes.toString() + ":" + "0" + second;
+  }
   if (second < 01) {
     if (minutes === 0 && second === 0) {
       window.clearInterval(interval);
+      alert("You made it boi");
     } else {
       second = 59;
       minutesTimer();
@@ -55,7 +60,7 @@ function timerStart() {
 }
 
 function timerStop() {
-  window.clearInterval(interval);
+  // window.clearInterval(interval);
   document.querySelector(".start").className = "start";
   document.querySelector(".start").innerHTML = "START";
 }
