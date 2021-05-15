@@ -29,7 +29,6 @@ function checkAferZero() {
   if (second < 01) {
     if (minutes === 0 && second === 0) {
       window.clearInterval(interval);
-      alert("You made it boi");
     } else {
       second = 59;
       minutesTimer();
