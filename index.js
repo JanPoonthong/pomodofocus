@@ -20,6 +20,10 @@ function secondTimer() {
     document.getElementById("timer").innerHTML =
       minutes.toString() + ":" + "0" + second;
   }
+  checkAferZero();
+}
+
+function checkAferZero() {
   if (second < 01) {
     if (minutes === 0 && second === 0) {
       window.clearInterval(interval);
@@ -63,4 +67,8 @@ function timerStop() {
   window.clearInterval(interval);
   document.querySelector(".start").className = "start";
   document.querySelector(".start").innerHTML = "START";
+}
+
+if (document.getElementById("break").checked) {
+  breakTimer();
 }
