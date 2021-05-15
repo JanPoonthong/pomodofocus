@@ -2,8 +2,9 @@ let clicked = false;
 let minutes = 59;
 let second = 60;
 let interval = 0;
-const startSound = document.getElementById("sound");
-const stopSound = document.getElementById("sound");
+const startSound = document.getElementById("start-sound");
+const stopSound = document.getElementById("stop-sound");
+const reachZeroSound = document.getElementById("reach-zero-sound");
 
 function start() {
   if (clicked) {
@@ -28,6 +29,9 @@ function secondTimer() {
 function checkAferZero() {
   if (second < 01) {
     if (minutes === 0 && second === 0) {
+      reachZeroSound.pause();
+      reachZeroSound.currentTime = 0;
+      reachZeroSound.play();
       window.clearInterval(interval);
     } else {
       second = 59;
