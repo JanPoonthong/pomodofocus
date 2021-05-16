@@ -1,10 +1,13 @@
+const startSound = document.getElementById("start-sound");
+const stopSound = document.getElementById("stop-sound");
+const reachZeroSound = document.getElementById("reach-zero-sound");
+const timerFromHtml = document.getElementById("timer");
+const startButton = document.querySelector(".start");
+
 let clicked = false;
 let minutes = 59;
 let second = 60;
 let interval = 0;
-const startSound = document.getElementById("start-sound");
-const stopSound = document.getElementById("stop-sound");
-const reachZeroSound = document.getElementById("reach-zero-sound");
 
 function start() {
   if (clicked) {
@@ -17,71 +20,64 @@ function start() {
 
 function secondTimer() {
   second--;
-  document.getElementById("timer").innerHTML =
-    minutes.toString() + ":" + second;
+  timerFromHtml.innerHTML = minutes.toString() + ":" + second;
   if (second < 10) {
-    document.getElementById("timer").innerHTML =
-      minutes.toString() + ":" + "0" + second;
+    timerFromHtml.innerHTML = minutes.toString() + ":" + "0" + second;
   }
   checkAferZero();
+}
+
+function playSound(mp3Sound) {
+  mp3Sound.pause();
+  mp3Sound.currentTime = 0;
+  mp3Sound.play();
 }
 
 function checkAferZero() {
   if (second < 01) {
     if (minutes === 0 && second === 0) {
-      reachZeroSound.pause();
-      reachZeroSound.currentTime = 0;
-      reachZeroSound.play();
+      playSound(reachZeroSound);
       window.clearInterval(interval);
     } else {
       second = 59;
-      minutesTimer();
+      minutes--;
+      timerFromHtml.innerHTML = minutes.toString() + ":" + second;
     }
   }
 }
 
-function minutesTimer() {
-  minutes--;
-  document.getElementById("timer").innerHTML =
-    minutes.toString() + ":" + second;
+function resetTimerAndStartButton() {
+  window.clearInterval(interval);
+  startButton.className = "start";
+  startButton.innerHTML = "START";
 }
 
 function pomodoroTimer() {
-  window.clearInterval(interval);
-  document.querySelector(".start").className = "start";
-  document.querySelector(".start").innerHTML = "START";
+  resetTimerAndStartButton();
   clicked = false;
-  document.getElementById("timer").innerHTML = "60:00";
+  timerFromHtml.innerHTML = "60:00";
   second = 60;
   minutes = 59;
 }
 
 function breakTimer() {
-  window.clearInterval(interval);
-  document.querySelector(".start").className = "start";
-  document.querySelector(".start").innerHTML = "START";
+  resetTimerAndStartButton();
   clicked = false;
-  document.getElementById("timer").innerHTML = "10:00";
+  timerFromHtml.innerHTML = "10:00";
   second = 60;
   minutes = 9;
 }
 
 function timerStart() {
-  document.querySelector(".start").classList.add("button-start-click");
-  document.querySelector(".start").innerHTML = "STOP";
-  startSound.pause();
-  startSound.currentTime = 0;
-  startSound.play();
+  startButton.classList.add("button-start-click");
+  startButton.innerHTML = "STOP";
+  playSound(startSound);
   interval = window.setInterval(secondTimer, 1000);
 }
 
 function timerStop() {
-  window.clearInterval(interval);
-  document.querySelector(".start").className = "start";
-  document.querySelector(".start").innerHTML = "START";
-  stopSound.pause();
-  stopSound.currentTime = 0;
-  stopSound.play();
+  resetTimerAndStartButton();
+  playSound(stopSound);
 }
 
 if (document.getElementById("break").checked) {
